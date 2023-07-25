@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+    />
+    <title>Ethentix Word Counter</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Roboto+Slab"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Ethentix Word Counter</h1>
+      </header>
+      <div class="card">
+        <textarea
+          id="input"
+          spellcheck="false"
+          maxlength="1000000"
+          placeholder="The quick brown fox jumps over the lazy dog..."
+          autofocus
+        ></textarea>
+        <div class="table">
+          <div class="table-item rounded">
+            <h5>Characters</h5>
+            <output id="characters">-</output>
+          </div>
+          <div class="table-item rounded">
+            <h5>Words</h5>
+            <output id="words">-</output>
+          </div>
+          <div class="table-item rounded">
+            <h5>Sentences</h5>
+            <output id="sentences">-</output>
+          </div>
+          <div class="table-item rounded">
+            <h5>Paragraphs</h5>
+            <output id="paragraphs">-</output>
+          </div>
+          <div class="table-item rounded">
+            <h5>Spaces</h5>
+            <output id="spaces">-</output>
+          </div>
+          <div class="table-item rounded">
+            <h5>Letters</h5>
+            <output id="letters">-</output>
+          </div>
+          <div class="table-item rounded">
+            <h5>Digits</h5>
+            <output id="digits">-</output>
+          </div>
+          <div class="table-item rounded">
+            <h5>Special Characters</h5>
+            <output id="specialcharacters">-</output>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup" id="notification">
+      <button id="close">&times;</button>
+      <h2>Attention!</h2>
+      <p>
+        However, this calculator was made to be as exact as possible. Please be
+        aware that it might not be perfect. No promises!
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
